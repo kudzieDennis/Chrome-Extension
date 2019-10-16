@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "My Cool Extension",
+    "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://.dailynews.co.zw/*","http://*/*.dailynews.co.zw/*","https://*/*.newsday.co.zw/*","http://*/*.newsday.co.zw/*","https://.herald.co.zw/*","http://.herald.co.zw/*"
+        //"<all_urls>"
+      ],
+      "js": ["popup.js"]
+    }
+],
+"page_action": {
+    "default_popup": "popup.js"
+  },
+"background": {
+    "scripts": ["background.js"]
+  }
+}

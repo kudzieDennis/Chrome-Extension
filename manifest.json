@@ -2,6 +2,7 @@
     "manifest_version": 2,
     "name": "My Cool Extension",
     "version": "0.1",
+    "description":"propagandawarning",
   "content_scripts": [
     {
       "matches": [
@@ -11,10 +12,11 @@
       "js": ["popup.js"]
     }
 ],
-"page_action": {
-    "default_popup": "popup.js"
+"browser_action": {
+    "default_popup": "popup.html"
   },
 "background": {
     "scripts": ["background.js"]
-  }
+  },
+  "permissions":["activeTab"]
 }

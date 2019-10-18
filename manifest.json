@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "My Cool Extension",
+    "name": "Fau's Extension",
     "version": "0.1",
     "description":"propagandawarning",
   "content_scripts": [
@@ -18,5 +18,5 @@
 "background": {
     "scripts": ["background.js"]
   },
-  "permissions":["activeTab"]
+  "permissions":["activeTab","declarativeContent"]
 }

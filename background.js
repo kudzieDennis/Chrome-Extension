@@ -8,7 +8,10 @@
       //chrome.tabs.sendText(activeTab.id, {"text": "clicked_browser_action"});
     //});
  // });
- chrome.browseraction.addEventListener("click",
+ //chrome.browserAction.onClicked.addListener(clicked);
+ //chrome.browseraction.addEventListener("click",
+
+ chrome.browserAction.onClicked.addListener("click",
  function(request, sender, sendResponse) {
    if( request.message === "clicked_brower_action" ) {
      var firstHref = $("a[href^='http']").eq(0).attr("href");

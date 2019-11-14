@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Fau's Extension",
-    "version": "0.1",
+    "version": "1.1",
     "description":"propagandawarning",
   "content_scripts": [
     {
@@ -11,6 +11,7 @@
       ],
       "js": ["popup.js"]
     }
+
 ],
 "browser_action": {
     "default_popup": "popup.html"
@@ -20,3 +21,5 @@
   },
   "permissions":["activeTab","declarativeContent"]
 }
+
+
